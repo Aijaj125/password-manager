@@ -18,7 +18,7 @@ def toggle_visibility():
     
 def suggest_password():
     password = ''
-    for i in range(12):
+    for _ in range(12):
         tmp_pass = random.choice([letters,numbers,symbols])
         password += random.choice(tmp_pass)
     Password_entry.delete(0, END)
